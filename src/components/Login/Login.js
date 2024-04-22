@@ -19,6 +19,7 @@ const Login = () => {
         }).then((response) => {
             console.log('response: ', response)
             sessionStorage.setItem('user', JSON.stringify(response))
+            window.location.href = '/';
             // dispatch(userReducer(response))
         }).catch((error) => {
             console.log(error);
@@ -38,7 +39,6 @@ const Login = () => {
             console.log('response: ', response)
             sessionStorage.setItem('access_token', JSON.stringify(response.access_token))
             get_user(response.access_token)
-            window.location.href = '/';
         }).catch((error) => {
             console.log(error?.detail);
             setError(error?.detail);

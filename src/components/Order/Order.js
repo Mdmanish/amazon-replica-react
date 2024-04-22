@@ -3,6 +3,7 @@ import earphone from "../../assets/earphon1.webp";
 import styles from "./Order.module.scss";
 import Header from "../Header/Header";
 import { getData, patchData } from "../../services/actions";
+import Footer from "../Footer/Footer";
 
 const Order = () => {
     const user = JSON.parse(sessionStorage.getItem('user'));
@@ -62,6 +63,7 @@ const Order = () => {
                 ))}
             </div>
         </div>
+        <Footer />
         </>
     );
 };

@@ -8,6 +8,7 @@ import { getData, postData, deleteData } from "../../services/actions";
 import jeansImg from "../../assets/jeans-img2.jpg";
 import rightTickIcon from "../../assets/right-tick-icon.png";
 import { discountedPrice } from "../../components/Helpers";
+import Footer from "../Footer/Footer";
 
 const Cart = () => {
     const { productId } = useParams();
@@ -105,6 +106,7 @@ const Cart = () => {
             }
         </div>
     </div>
+    <Footer />
     </>
     )
 };
@@ -181,6 +183,7 @@ const CartMainPage = () => {
                 </div>
             </div>
         </div>
+        <Footer />
         </>
     )
 }

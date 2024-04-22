@@ -15,6 +15,7 @@ import secureIcon from "../../assets/secure-icon.png";
 import { ItemFullDetails } from "../Items/Items";
 import { getData, postData } from "../../services/actions";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 
 const ItemMainPage = (props) => {
@@ -262,6 +263,7 @@ const ItemMainPage = (props) => {
                 }
             </div>
         </div>
+        <Footer />
         </>
     )
 };

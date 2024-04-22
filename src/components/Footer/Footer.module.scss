@@ -1,0 +1,144 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #232f3e;
+    color: #fff;
+}
+
+.backToTop {
+    text-align: center;
+    background-color: #37475A;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.backToTop p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.backToTop:hover {
+    background-color: #007185;
+}
+
+.footerContainer .aboutUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 30px;
+    background-color: #232f3e;
+    color: #fff;
+    font-size: small;
+}
+
+.footerContainer .aboutUs h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footerContainer .aboutUs p {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footerContainer .aboutUs p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footerContainer hr {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    border: none;
+    border-top: 1px solid #3a4553;
+}
+
+.footerImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 24px 40%;
+    background-color: #232f3e;
+    color: #fff;
+    font-size: small;
+}
+
+.footerImages img {
+    width: 90px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.footerImages p {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.amazonServices {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    background-color: #131A22;
+    padding: 32px 20%;
+    padding-bottom: 0;
+    color: #fff;
+}
+
+.amazonServicesDetails {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amazonServicesDetails * {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 115%;
+}
+
+.amazonServicesDetails *:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.amazonServicesDetails div {
+    width: 25%;
+    margin-bottom: 16px;
+}
+
+.amazonServices .copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 16px;
+    padding: 10px 0 30px;
+}
+
+.amazonServices .copyright .terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.amazonServices .copyright .terms p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.amazonServices .copyright .terms p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-right: 8px;
+    line-height: 1%;
+}

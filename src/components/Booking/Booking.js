@@ -7,6 +7,7 @@ import logo from "../../assets/amazon-in-logo.png";
 import secureIcon from "../../assets/secure-icon.png";
 import { getData, postData, deleteData } from "../../services/actions";
 import { discountedPrice } from "../../components/Helpers";
+import Footer from "../Footer/Footer";
 
 const Booking = () => {
     const user = JSON.parse(sessionStorage.getItem('user'));
@@ -86,65 +87,69 @@ const Booking = () => {
     }, [])
     
     return (
-        <div className={bookingStyle.bookingContainer}>
-            <div className={bookingStyle.bookingHeader}>
-                <img src={logo} alt="Amazon logo" className={bookingStyle.logo} />
-                <h3>Check Out</h3>
-                <img src={secureIcon} alt="secure-icon" className={bookingStyle.secureIcon} />
-            </div>
-
-            <div className={bookingStyle.bookingBody}>
-                <div className={bookingStyle.bookingBodyLeft}>
-                    <div>
-                        <h2>Delivery Address</h2>
-                        <Address handleAddressOptionChange={handleAddressOptionChange}/>
-                    </div>
-
-                    <div>
-                        <h2>Select a payment method</h2>
-                        <Payment handlePaymentOptionChange={handlePaymentOptionChange}/>
-                    </div>
-                    <button className={bookingStyle.bookingButton} onClick={handleOrderPlaceButton}>Order Place</button>
+        <>
+            <div className={bookingStyle.bookingContainer}>
+                <div className={bookingStyle.bookingHeader}>
+                    <img src={logo} alt="Amazon logo" className={bookingStyle.logo} />
+                    <h3>Check Out</h3>
+                    <img src={secureIcon} alt="secure-icon" className={bookingStyle.secureIcon} />
                 </div>
 
-                <div className={bookingStyle.bookingBodyRight}>
-                    <div className={bookingStyle.bookingBodyRightTop}>
-                        <button className={bookingStyle.bookingButton + " " + bookingStyle.bookingButtonLarge} onClick={handleOrderPlaceButton}>Order Place</button>
-                        <p>Choose a payment method to continue checking out. You will still have a chance to review and edit your order before it is final.</p>
-                    </div>
-                    <hr />
-                    <div className={bookingStyle.bookingBodyRightMiddle}>
-                        <h3>Order Summary</h3>
-                        <div className={bookingStyle.orderSummary}>
-                            <p>Items:</p>
-                            <p>Rs. {totalPrice}</p>
+                <div className={bookingStyle.bookingBody}>
+                    <div className={bookingStyle.bookingBodyLeft}>
+                        <div>
+                            <h2>Delivery Address</h2>
+                            <Address handleAddressOptionChange={handleAddressOptionChange}/>
                         </div>
-                        <div className={bookingStyle.orderSummary}>
-                            <p>Delivery:</p>
-                            <p>Rs. 160</p>
+
+                        <div>
+                            <h2>Select a payment method</h2>
+                            <Payment handlePaymentOptionChange={handlePaymentOptionChange}/>
                         </div>
-                        <div className={bookingStyle.orderSummary}>
-                            <p>Total:</p>
-                            <p>Rs. {totalPrice + 160}</p>
-                        </div>
-                        <div className={bookingStyle.orderSummary}>
-                            <p>Promotion Applied:</p>
-                            <p>-Rs. 160</p>
-                        </div>
-                        <hr />
-                        <div className={bookingStyle.orderSummary}>
-                            <strong>Order Total:</strong>
-                            <strong>Rs. {totalPrice}</strong>
-                        </div>
-                        <hr />
+                        <button className={bookingStyle.bookingButton} onClick={handleOrderPlaceButton}>Order Place</button>
                     </div>
 
-                    <div className={bookingStyle.bookingBodyRightBottom}>
-                        <a href="#">How are delivery costs calculated?</a>
+                    <div className={bookingStyle.bookingBodyRight}>
+                        <div className={bookingStyle.bookingBodyRightTop}>
+                            <button className={bookingStyle.bookingButton + " " + bookingStyle.bookingButtonLarge} onClick={handleOrderPlaceButton}>Order Place</button>
+                            <p>Choose a payment method to continue checking out. You will still have a chance to review and edit your order before it is final.</p>
+                        </div>
+                        <hr />
+                        <div className={bookingStyle.bookingBodyRightMiddle}>
+                            <h3>Order Summary</h3>
+                            <div className={bookingStyle.orderSummary}>
+                                <p>Items:</p>
+                                <p>Rs. {totalPrice}</p>
+                            </div>
+                            <div className={bookingStyle.orderSummary}>
+                                <p>Delivery:</p>
+                                <p>Rs. 160</p>
+                            </div>
+                            <div className={bookingStyle.orderSummary}>
+                                <p>Total:</p>
+                                <p>Rs. {totalPrice + 160}</p>
+                            </div>
+                            <div className={bookingStyle.orderSummary}>
+                                <p>Promotion Applied:</p>
+                                <p>-Rs. 160</p>
+                            </div>
+                            <hr />
+                            <div className={bookingStyle.orderSummary}>
+                                <strong>Order Total:</strong>
+                                <strong>Rs. {totalPrice}</strong>
+                            </div>
+                            <hr />
+                        </div>
+
+                        <div className={bookingStyle.bookingBodyRightBottom}>
+                            <a href="#">How are delivery costs calculated?</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <Footer />
+        </>
     );
 };
 

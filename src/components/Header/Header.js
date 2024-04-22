@@ -67,7 +67,7 @@ const Header = () => {
                     </>
                 ) : (
                     <>
-                        <p>Hello, Sign in</p>
+                        <Link to={'/login'}>Hello, Sign in</Link>
                         <h3>Accounts & Lists</h3>
                     </>
                 )}
