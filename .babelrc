@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    ["babel-plugin-react-css-modules", {
+      "filetypes": {
+        ".scss": {
+          "syntax": "postcss-scss"
+        }
+      }
+    }]
+  ]
+}

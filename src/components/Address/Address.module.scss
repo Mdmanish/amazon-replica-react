@@ -1,0 +1,58 @@
+.addressContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin: 2rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.addressContainer h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.radioOptions label {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.5rem;
+}
+
+.radioOptions label input {
+    margin-right: 0.5rem;
+}
+
+.radioOptions label p {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.selected {
+    background: #fcf5ee;
+    border: 1px solid #ccc;
+    border-radius: 5px;   
+}
+
+.addNewAddress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.addNewAddress img {
+    width: 15px;
+    height: 15px;
+    margin-right: 0.3rem;
+}
+
+.addressContainer hr {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+}

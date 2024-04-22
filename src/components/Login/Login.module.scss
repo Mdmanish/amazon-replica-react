@@ -1,0 +1,162 @@
+.logo {
+    text-align: center;
+    margin-top: 10px;
+    img {
+        width: 100px;
+        height: 40px;
+    }
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    font-size: small;
+    font-weight: 500;
+    margin: auto;
+    padding: 20px;
+    width: 18rem;
+    border: 1px solid #c40000;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 4px #fcf4f4 inset;
+}
+
+
+.loginContainer {
+    text-align: center;
+    margin-top: 10px;
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.formContainer {
+    display: inline-block;
+    text-align: left;
+    padding: 0px 30px;
+    width: 18rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer h2 {
+    margin: 0;
+    padding: 1rem;
+    padding-left: 0;
+    font-size: 26px;
+
+}
+
+.inputField {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.inputField label {
+    display: block;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-weight: 500;
+}
+
+.inputField input {
+    width: 95%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 5px;
+}
+
+input::placeholder {
+    color: gray;
+    font-size: small;
+}
+
+.mobileField {
+    display: flex;
+    align-items: center;
+    select {
+        width: 4rem;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        padding: 5px;
+        margin-right: 8px;
+    }
+}
+
+.forgotPassword {
+    text-align: right;
+    font-size: 12px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.submitButton {
+    padding: 7px 20px;
+    border-radius: 5px;
+    background: #F7CA00;
+    border-color: #F2C200;
+    color: #0F1111;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.signUp {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signUp p {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    font-weight: 400;
+    font-size: small;
+    margin: 40px 0 20px;
+} 
+
+.signUp p span { 
+    background:#fff;
+    padding:0 10px;
+}
+
+.signUpLink {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.terms {
+    margin-top: 18px;
+    width: 100%;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    box-sizing: border-box;
+    a {
+        color: #007bff;
+    }
+}
+
+.otherTerms {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    box-sizing: border-box;
+}

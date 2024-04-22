@@ -1,0 +1,307 @@
+.container {
+    display: flex;
+    padding: 2rem;
+    align-items: flex-start;
+}
+
+.leftPart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 11rem;
+    box-sizing: border-box;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.productImg {
+    margin-right: 2rem;
+}
+
+.productImg img {
+    width: 90px;
+    height: 100px;
+}
+
+.productDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.productDetails p {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.productDetails div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.productDetails div p {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.productDetails img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 1rem;
+}
+
+.middlePart {
+    height: 11rem;
+    width: 28%;
+    box-sizing: border-box;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.middlePart p {
+    margin: 0;
+    margin-bottom: 0.1rem;
+}
+
+.middlePart1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.middlePart p {
+    margin-right: 5px;
+}
+
+.middlePart .middlePart2 p, a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.middlePart .symbol {
+    width: 15rem;
+    height: 1rem;
+    background-color:#009674;
+    border-radius: 0.5rem;
+}
+
+.middlePart2p1 {
+    color: #009674;
+    font-weight: 700 !important;
+}
+
+.rightPart {
+    height: 11rem;
+    width: 28%;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightPart1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rightPart1 h3 {
+    margin-right: 2rem;
+}
+
+.rightPart1 p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.rightPart button {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #F7CA00;
+    color: #0F1111;
+}
+
+.goToCart {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+}
+
+.recommendedContainer h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0F1111;
+    margin-left: 2.5rem;
+}
+
+.rocommendedItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.cartItemContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #eaeded;
+    padding-top: 1rem;
+    height: 100% !important;
+}
+
+.cartItemDetails {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 1rem;
+    gap: 0;
+    background-color: #fff;
+}
+
+.cartItemDetails * {
+    margin: 0;
+}
+
+.cartItemDetails h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    color: #0F1111;
+}
+
+.cartItemDetails hr {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.cartItemBooking {
+    display: flex;
+    flex-direction: column;
+    width: 19.5%;
+    height: 17rem;
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.cartItemBooking1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cartItemBooking1 p {
+    margin: 0;
+    margin-bottom: 0.1rem;
+}
+
+.middlePart1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cartItemBooking1 p {
+    margin-right: 5px;
+}
+
+.cartItemBooking1 .middlePart2 p, a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cartItemBooking1 .symbol {
+    width: 13rem;
+    height: 1rem;
+    background-color:#009674;
+    border-radius: 0.5rem;
+}
+
+.middlePart2p1 {
+    color: #009674;
+    font-weight: 700 !important;
+}
+
+.cartItemBooking h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0F1111;
+    margin-bottom: 0.5rem;
+}
+
+
+.checkBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.checkBox input {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.checkBox p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.cartItemBooking button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #F7CA00;
+    color: #0F1111;
+}
+
+.CharItemEMI {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.CharItemEMI p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}

@@ -1,0 +1,84 @@
+.orderContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 15%;
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
+.orderContainerTabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    a {
+        text-decoration: none;
+        color: #007185;
+        font-weight: 600;
+        font-size: 14px;
+        margin-right: 2rem;
+    }
+}
+
+.orderContainerItems {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.orderContainerItem {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.orderContainerItemLeft p,
+.orderContainerItemLeft h2,
+.orderContainerItemLeft a {
+    margin: 0;
+}
+
+.orderContainerItemLeft p{
+    margin-bottom: 1rem;
+    color: #007600;
+}
+
+.orderContainerItemLeft a {
+    margin-left: 116px;
+    font-size: 14px;
+}
+
+.orderContainerItemLeft img {
+    width: 110px;
+    height: 110px;
+    margin-top: -1rem;
+}
+
+.orderContainerItemRight {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    button {
+        padding: 6px 50px;
+        border-radius: 10px;
+        background: #F7CA00;
+        color: #0F1111;
+        font-weight: 400;
+        font-size: 14px;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+}
+
+.orderContainerItemRight .viewEditButton {
+    background: #fff;
+    border : 1px solid #ccc;
+    border-radius: 5px;
+}
