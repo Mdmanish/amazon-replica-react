@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 import styles from "./Login.module.scss";
 import logo from "../../assets/amazon-in-logo.png";
 import { Link } from "react-router-dom";
