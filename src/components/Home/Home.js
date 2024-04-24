@@ -12,7 +12,7 @@ const Home = () => {
     
     useEffect(() => {
         // const user = JSON.parse(sessionStorage.getItem('user'));
-        getData("http://127.0.0.1:8000/").then((response) => {
+        getData("/").then((response) => {
             console.log(response);
             setProducts(response);
         }).catch((error) => {

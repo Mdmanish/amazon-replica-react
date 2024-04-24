@@ -21,7 +21,7 @@ const Order = () => {
     }
 
     useEffect(() => {
-        getData("http://127.0.0.1:8000/order/" + user?.id).then((response) => {
+        getData("/order/" + user?.id).then((response) => {
             console.log("order userid response:",response);
             setProducts(response);
         }).catch((error) => {

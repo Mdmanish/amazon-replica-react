@@ -70,7 +70,7 @@ const ItemMainPage = (props) => {
     }
 
     useEffect(() => {
-        getData("http://127.0.0.1:8000/product/" + productId).then((response) => {
+        getData("/product/" + productId).then((response) => {
             console.log(response);
             setProductDetails(response);
             setLargeImageUrl(response?.photos?.[0]?.url);
@@ -80,7 +80,7 @@ const ItemMainPage = (props) => {
             console.log(error);
         })
 
-        getData("http://127.0.0.1:8000/?limit=12").then((response) => {
+        getData("/?limit=12").then((response) => {
             console.log(response);
             setProducts(response);
         }).catch((error) => {

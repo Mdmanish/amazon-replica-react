@@ -13,7 +13,7 @@ const Login = () => {
     // const dispatch = useDispatch();
 
     const get_user = (accessToken) => {
-        authentication("http://127.0.0.1:8000/get_user",{
+        authentication("/get_user",{
             access_token: accessToken,
             token_type: "Bearer"
         }).then((response) => {
@@ -32,7 +32,7 @@ const Login = () => {
             setError("All fields are required");
             return;
         }
-        authentication("http://127.0.0.1:8000/login", {
+        authentication("/login", {
             username: username,
             password: password,
         }).then((response) => {

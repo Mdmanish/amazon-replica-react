@@ -77,7 +77,7 @@ const Booking = () => {
     }
 
     useEffect(() => {
-        getData("http://127.0.0.1:8000/cart/" + user?.id).then((response) => {
+        getData("/cart/" + user?.id).then((response) => {
             console.log(response);
             setProducts(response);
             calculateTotalPrice(response);

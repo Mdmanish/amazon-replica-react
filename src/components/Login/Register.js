@@ -16,7 +16,7 @@ const Register = () => {
             setError("All fields are required");
             return;
         }
-        authentication("http://127.0.0.1:8000/register", {
+        authentication("/register", {
             name: yourname,
             username: username,
             password: password,

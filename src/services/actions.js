@@ -1,9 +1,10 @@
 import axios from 'axios';
 
+const BASE_URL = "https://amazon-replica-fastapi.onrender.com";
 export const authentication = (api, data = null) => {
     return new Promise((resolve, reject) => {
         axios
-            .post(api, data)
+            .post(BASE_URL + api, data)
             .then((response) => {
                 resolve(response?.data);
             })
@@ -16,7 +17,7 @@ export const authentication = (api, data = null) => {
 export const getData = (api, data = null) => {
     return new Promise((resolve, reject) => {
         axios
-            .get(api, data)
+            .get(BASE_URL + api, data)
             .then((response) => {
                 resolve(response?.data);
             })
@@ -29,7 +30,7 @@ export const getData = (api, data = null) => {
 export const postData = (api, data = null) => {
     return new Promise((resolve, reject) => {
         axios
-            .post("http://127.0.0.1:8000" + api, data)
+            .post(BASE_URL + api, data)
             .then((response) => {
                 console.log('response', response)
                 resolve(response?.data);
@@ -43,7 +44,7 @@ export const postData = (api, data = null) => {
 export const deleteData = (api, data = null) => {
     return new Promise((resolve, reject) => {
         axios
-            .delete("http://127.0.0.1:8000" + api, data)
+            .delete(BASE_URL + api, data)
             .then((response) => {
                 resolve(response?.data);
             })
@@ -56,7 +57,7 @@ export const deleteData = (api, data = null) => {
 export const patchData = (api, data = null) => {
     return new Promise((resolve, reject) => {
         axios
-            .patch("http://127.0.0.1:8000" + api, data)
+            .patch(BASE_URL + api, data)
             .then((response) => {
                 resolve(response?.data);
             })

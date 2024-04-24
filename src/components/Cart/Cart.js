@@ -44,14 +44,14 @@ const Cart = () => {
         setSelectedItemImg(selectedItemImg);
     }
     useEffect(() => {
-        getData("http://127.0.0.1:8000/cart/" + user?.id).then((response) => {
+        getData("/cart/" + user?.id).then((response) => {
             console.log(response);
             fetchRequiredData(response);
         }).catch((error) => {
             console.log(error);
         })
 
-        getData("http://127.0.0.1:8000/?limit=12").then((response) => {
+        getData("/?limit=12").then((response) => {
             console.log(response);
             setProducts(response);
         }).catch((error) => {
@@ -134,7 +134,7 @@ const CartMainPage = () => {
     }
 
     useEffect(() => {
-        getData("http://127.0.0.1:8000/cart/" + user?.id).then((response) => {
+        getData("/cart/" + user?.id).then((response) => {
             console.log(response);
             setProducts(response);
             calculateTotalPrice(response);

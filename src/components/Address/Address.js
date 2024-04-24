@@ -21,7 +21,7 @@ const Address = ( props ) => {
     }
 
     const getDeleviryAddresses = () => {
-        getData("http://127.0.0.1:8000/address/" + user?.id).then((response) => {
+        getData("/address/" + user?.id).then((response) => {
             console.log('addresses: ', response);
             setUserAddresses(response);
         }).catch((error) => {
