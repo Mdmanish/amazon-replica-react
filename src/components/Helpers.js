@@ -19,3 +19,12 @@ export const strTruncate = (str, n) => {
 export const discountedPrice = (price, discount) => {
     return parseInt(price - (price * (discount / 100)));
 }
+
+export const LoadingSpinner = () => {
+  return (
+    <div className={styles.loadingSpinnerContainer}>
+      <div className={styles.loadingSpinner}></div>
+    </div>
+  );
+};
+
