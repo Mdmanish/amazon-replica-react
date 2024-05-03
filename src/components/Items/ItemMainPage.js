@@ -238,8 +238,8 @@ const ItemMainPage = (props) => {
                         <option value="5">5</option>
                     </select>
                 </div>
-                <button className={styles.addToCart} onClick={handleAddToCart}>Add to Cart</button>
-                <button className={styles.addToCart + " " + styles.buyNow} onClick={handleBuyNow}>Buy Now</button>
+                <button className={styles.addToCart} onClick={() => user?.id ? handleAddToCart() : window.location.href = '/login'}>Add to Cart</button>
+                <button className={styles.addToCart + " " + styles.buyNow} onClick={() => user?.id ? handleBuyNow() : window.location.href = '/login'}>Buy Now</button>
                 <div className={styles.secureTransaction}>
                     <img src={secureIcon} alt="secureIcon" />
                     <a href="#">Secure transaction</a>
